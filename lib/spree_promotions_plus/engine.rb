@@ -21,7 +21,11 @@ module SpreePromotionsPlus
 																						Spree::Promotion::Rules::ProductBuyTaxonQuantity,
 																						Spree::Promotion::Rules::HappyBirthday,
 																						Spree::Promotion::Rules::Gender,
-																						Spree::Promotion::Rules::Club
+																						Spree::Promotion::Rules::Club,
+																						Spree::Promotion::Rules::NoClub,
+																						Spree::Promotion::Rules::NoEvent,
+																						Spree::Promotion::Rules::NoPack,
+																						Spree::Promotion::Rules::NoPrimeur
 																					 ]
 		end
 
