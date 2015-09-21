@@ -10,7 +10,7 @@ module Spree
   def selected_products(order)
     order.line_items.map do |line_item|
       variant = line_item.variant
-      variant.product if variant.pack_price? && variant.pack_quantity? && line_item.quantity >= variant.pack_quantity
+      variant.product if !(variant.pack_price? && variant.pack_quantity? && line_item.quantity >= variant.pack_quantity)
     end.flatten.compact
   end
   end
